@@ -64,6 +64,10 @@ ul {
 li {
   padding: 10px 0;
   border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
 .task-label {
@@ -71,6 +75,7 @@ li {
   align-items: center;
   gap: 10px;
   cursor: default;
+  flex: 1;
 }
 
 .task-checkbox {
@@ -83,4 +88,15 @@ li {
 .completed {
   text-decoration: line-through;
   color: #9ca3af;
+}
+
+.delete-button {
+  padding: 6px 10px;
+  background: #ef4444;
+  color: white;
+  border-radius: 6px;
+}
+
+.delete-button:hover {
+  background: #dc2626;
 }
